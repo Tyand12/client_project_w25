@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Tutoring</title>
 </head>
 <body>
     <header class="head">
-        <a href="#main-content" tabindex = "0" class ="skip">Skip to Main Content</a>
+        <a href="#main-content" class="skip" tabindex="0">Skip to Main Content</a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Tutoring_Site.html">Tutoring</a></li>
+                <li><a href="Tutoring_Site.html" class="active">Tutoring</a></li>
                 <li><a href="Study_Spaces.html">Study Spaces</a></li>
                 <li><a href="Clubs.html">Clubs</a></li>
             </ul>
@@ -21,48 +21,48 @@
         <h1>Tutoring</h1>
     </header>
 
-<main id="main-content" tabindex = "0" class="container">
-    <section class = "welcome" tabindex = "0">
-        <h2>Need Academic Support?</h2>
-        <p>Take advantage of tutoring resources to strengthen your understanding of course material.</p>
-    </section>
+    <main id="main-content" class="container">
+        <section class="welcome">
+            <h2>Need Academic Support?</h2>
+            <p>Take advantage of tutoring resources to strengthen your understanding of course material.</p>
+        </section>
 
-    <section class = "text-block" tabindex = "0">
-        <h2>Available Tutoring Services</h2>
-
-        <article tabindex = "0">
+        <div class="img-peer">
+            <img src="images/students.jpg" alt="Students working together in a tutoring session">
+        </div>
+        <section class = 'peer'>
             <h3>Peer Tutoring @ UMSI</h3>
-            <figure>
-                <img src="images/students.jpg" alt="Students working together in a tutoring session">
-            </figure>
-            <p>The peer tutoring program at the University of Michigan's School of Information (SI) is an invaluable resource designed to support students in their academic journey. This program connects students with knowledgeable peers who provide guidance and assistance in a variety of subject areas, fostering a collaborative learning environment. Peer tutors offer personalized help, clarifying challenging concepts and helping to develop effective study strategies that cater to individual learning styles. This initiative not only aids those seeking help but also empowers tutors to reinforce their own understanding and develop strong communication and leadership skills. By promoting a culture of mentorship and academic excellence, the peer tutoring program at SI enhances the educational experience, helping students to flourish both academically and personally.</p>
-        </article>
+            <p>The peer tutoring program at the University of Michigan's School of Information (SI) connects students with knowledgeable peers who provide personalized assistance in various subjects. This collaborative program helps students clarify difficult concepts and develop effective study strategies. Tutors benefit by reinforcing their own understanding and gaining leadership skills, fostering a culture of mentorship and academic excellence at SI.</p>
+        </section>
 
-        <article tabindex = "0">
+
+        <div class="img-study">
+            <img src="images/student_studying.jpg" alt="Student studying under a lamp at Hatcher Undergraduate Library">
+        </div>
+        <section class = 'sweetland'>
             <h3>Sweetland Writing Center</h3>
-            <figure>
-                <img src="images/student_studying.jpg" alt="Lone student studying under a lamp at Hatcher Undergraduate Library">
-            </figure>
-            <p>The Sweetland Center for Writing at the University of Michigan is a central hub for writing support and instruction, dedicated to fostering excellence in writing across all disciplines. It offers a wide range of services designed to assist undergraduate and graduate students at every stage of the writing process, whether they're brainstorming ideas, organizing drafts, or refining final copies. Through personalized writing consultations, writing workshops, and peer tutoring, Sweetland helps students develop their writing skills in a supportive and collaborative environment. The center also offers specialized programs for multilingual writers and those working on long-term projects like theses and dissertations. Additionally, Sweetland contributes to the university’s larger academic mission by promoting innovative writing pedagogy and supporting faculty in incorporating writing into their courses. Overall, the Sweetland Center for Writing plays a crucial role in nurturing confident, effective communicators who are well-prepared to succeed in their academic and professional endeavors.</p>
-        </article>
+            <p>The Sweetland Center for Writing supports students at every stage of the writing process. It offers consultations, workshops, and peer tutoring to help students brainstorm, organize drafts, and refine their final papers. Sweetland also assists multilingual writers and those working on long-term projects like theses and dissertations, contributing to the development of effective communicators at UM.</p>
+        </section>
 
-        <article tabindex = "0">
+        <div class="img-group">
+            <img src="images/group_project.jpg" alt="Students working together in a classroom">
+        </div>
+        <section class = 'learning'>
             <h3>Math Lab & Science Learning Center</h3>
-            <figure>
-                <img src="images/group_project.jpg" alt="Stduents conversing between rows whilst sitting at desks">
-            </figure>
-            <p>The Math Lab and Science Learning Center at the University of Michigan are essential resources committed to supporting students in their pursuit of excellence in mathematics and the sciences. The Math Lab offers personalized assistance through drop-in tutoring, allowing students to receive immediate help with homework problems, exam preparation, or concepts that are difficult to grasp. Staffed by knowledgeable tutors, many of whom are advanced students or professionals in mathematics, the lab fosters a welcoming and collaborative environment. Similarly, the Science Learning Center (SLC) provides a range of services to help students excel in their biology, chemistry, and physics courses. The SLC offers study groups, workshops, and one-on-one tutoring, which are designed to deepen understanding and enhance problem-solving skills. These centers not only provide academic support but also encourage students to engage with their peers, building learning communities that enhance their educational experience. Together, they play a vital role in helping students navigate challenging coursework and achieve their academic goals.</p>
-        </article>
-    </section>
-</main>
+            <p>The Math Lab and Science Learning Center provide essential academic support for students in mathematics and the sciences. The Math Lab offers drop-in tutoring, while the Science Learning Center offers study groups and one-on-one sessions in subjects like biology, chemistry, and physics. Both centers foster collaborative learning and help students build problem-solving skills to excel in their courses.</p>
+        </section>
+    </main>
 
-<footer>
-    <p>University of Michigan School of Information, North Quad, 105 S State St, Ann Arbor, MI | 
-    <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
-</footer>
+    <footer>
+        <p>© Copyrights <span id="year"></span> by University of Michigan School of Information, North Quad, 105 S State St, Ann Arbor, MI | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a>. All rights reserved.</p>
+    </footer>
 
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
+
 
 
 <!-- content for this page regarding leaders, scheule, and what to expect rafted by UM GPT -->

@@ -13,7 +13,8 @@ body{
     position: absolute;
     top: -40px;
     left: 10px;
-    color: white;
+    color: #00274C;
+    background-color: white;
     padding: 10px;
     z-index: 100;
     text-decoration: none;
@@ -32,7 +33,7 @@ body{
     padding: 20px;
     text-align: center;
 }
-.head nav ul{
+nav{
     background: #00274C;
     list-style: none;
     padding: 0;
@@ -41,14 +42,18 @@ body{
     display: inline;
     margin: 0 15px;
 }
-.head nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 16px;
 }
-.head nav ul li a:hover,
-.head nav ul li a:focus{
+
+nav a:hover, nav a:focus, nav a.active{
     text-decoration: underline;
+    color: white;
+    font-weight: bold;
 }
 
 .head h1{
@@ -130,7 +135,6 @@ img{
 
 .text-block a{
     padding: 5px;
-    text-decoration: underline;
     color: black;
 }
 
@@ -163,4 +167,264 @@ h3{
 
 .text-block ul{
     margin-left: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .welcome{
+        grid-column: 1/-1;
+    }
+
+    .Physical{
+        grid-column: 1;
+    }
+    .bell{
+        grid-column: 1;
+        grid-row: 2;
+        gap: 10px;
+        padding: 15px;
+        background: #eef5ff;
+        border-left: 5px solid #00274C;
+        padding: 10px;
+    }
+
+    .bell_tower{
+        grid-column: 2;
+        grid-row: 2;
+        justify-content: center;
+    }
+
+    .recreation{
+        grid-column: 2;
+    }
+
+    .recreation h3{
+        grid-column: 2;
+    }
+
+    .sports{
+        grid-column: 2;
+        gap: 10px;
+        padding: 15px;
+        background: #eef5ff;
+        border-right: 5px solid #00274C;
+        padding: 10px;
+    }
+
+    .im{
+        grid-column: 1;
+    }
+
+    .mental{
+        grid-column: 1;
+        justify-items: center;
+        border-right: 5px black solid;
+    }
+
+    .outside{
+        grid-column: 2;
+        justify-content: center;
+    }
+
+    .peer{
+        grid-column: 1;
+        grid-row: 2;
+        background: #eef5ff;
+        border-left: 5px solid #00274C;
+        padding: 10px;
+    }
+
+    .learning{
+        grid-column: 1;
+        grid-row: 4;
+        background: #eef5ff;
+        border-left: 5px solid #00274C;
+        padding: 10px;
+    }
+
+    .sweetland{
+        background: #eef5ff;
+        border-right: 5px solid #00274C;
+        padding: 10px;
+    }
+
+    .reach{
+        grid-column: 1;
+        grid-row: 2;
+        background: #eef5ff;
+        border-left: 5px solid #00274C;
+        padding: 10px;
+    }
+
+    .ktp{
+        grid-column: 1;
+        grid-row: 4;
+        background: #eef5ff;
+        border-left: 5px solid #00274C;
+        padding: 10px;
+    }
+
+    .atd{
+        background: #eef5ff;
+        border-right: 5px solid #00274C;
+        padding: 10px;
+    }
+
+    .shapiro, .hatcher, .dude, .nq{
+        background: #eef5ff;
+        border: 5px solid #00274C;
+        padding: 10px;
+    }
+
+    .img-shapiro img, .img-hatcher img, .img-dude img, .img-nq img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .img-reach, .img-atd, .img-ktp{
+        display: grid;
+        place-items: center;
+        min-height: 100%;
+    }
+
+    .img-peer, .img-study, .img-group{
+        display: grid;
+        place-items: center;
+        min-height: 100%;
+    }
+
+    .bell_tower, .im{
+        display: grid;
+        place-items: center;
+        height: 100%;
+    }
+
+    .container-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+    }
+    
+    .fourofour {
+        text-align: center;
+    }
+    
+    .fourofour-content {
+        display: flex;
+        align-items: center; 
+        gap: 20px; 
+    }
+    
+    .fourofour img {
+        max-width: 150px;
+        height: auto;
+    }
+    
+    .text-content {
+        text-align: left;
+    }
+    
+    .fourofour h1 {
+        font-size: 50px;
+        color: #00274C;
+    }
+    
+    .fourofour p {
+        font-size: 20px;
+        color: #6c757d;
+    }
+    
+    .fourofour a {
+        text-decoration: none;
+        color: #00274C;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .fourofour a:hover {
+        text-decoration: underline;
+    }
+    
+    form {
+        margin-top: 30px;
+        background-color: #ffffff;
+        padding: 60px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+        text-align: left;
+    }
+    
+    fieldset {
+        border: none;
+        padding: 0;
+    }
+    
+    legend {
+        font-size: 24px;
+        font-weight: bold;
+        color: #00274C;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-size: 16px;
+        color: #343a40;
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    textarea {
+        resize: vertical;
+        min-height: 150px;
+    }
+    
+    input[type="submit"] {
+        background-color: #00274C;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #005a8e;
+    }
+
+    .help a {
+        text-decoration: none;
+        color: #00274C;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .help a:hover {
+        text-decoration: underline;
+    }
+
+    #submit:focus{  
+        border: 5px solid  #FFCB05;
+    }
+    
+
 }
